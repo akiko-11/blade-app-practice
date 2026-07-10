@@ -15,7 +15,7 @@ class ProductController extends Controller
         $products = collect([
             (object) [
                 'name' => 'ノートパソコン',
-                'category' => null,
+                'category' => '電子機器',
                 'price' => 89800,
                 'in_stock' => true,
             ],
