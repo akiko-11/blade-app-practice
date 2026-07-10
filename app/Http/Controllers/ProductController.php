@@ -8,11 +8,14 @@ class ProductController extends Controller
 {
     public function index()
     {
-        // ダミーデータの作成
+        // データが存在しない場合
+        // $products = collect();
+
+        // データが存在する場合
         $products = collect([
             (object) [
                 'name' => 'ノートパソコン',
-                'category' => '電子機器',
+                'category' => null,
                 'price' => 89800,
                 'in_stock' => true,
             ],
